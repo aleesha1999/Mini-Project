@@ -2,7 +2,7 @@ import time
 import concurrent.futures
 import streamlit as st
 from streamlit.runtime.scriptrunner import add_script_run_ctx
-##import flet as ft
+import flet as ft
 import plotly.express as px
 import pandas as pd
 import os
@@ -18,8 +18,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(filename,encoding="ANSI")
 else:
-    ##os.chdir(r"C:\My Laptop\Munna Notes\MCA\Sem 3\Study Materials\Mini Project\SalesPurchaseMarketing\pythonProject1")
-    os.chdir(r"C:\Salesproject\SalesPurchaseMarketing\pythonProject")
+    os.chdir(r"C:\My Laptop\Munna Notes\MCA\Sem 3\Study Materials\Mini Project\SalesPurchaseMarketing\pythonProject1")
     df = pd.read_csv("Superstore1.csv",encoding="ANSI")
     # "ISO-8859-1"
     col1, col2 = st.columns((2))

@@ -17,6 +17,7 @@ marketing_page = st.Page(
     page="marketing.py",
     title="Marketing Page",
 )
+
 about_page = st.Page(
     page="about.py",
     title = "About Project",
